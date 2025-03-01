@@ -31,8 +31,8 @@
         .dark-mode .bg-secondary { background-color: #252526; } /* Darker Gray */
         .dark-mode .bg-light { background-color: #3B3B3B; } /* Mid Gray */
         .dark-mode .bg-accent { background-color: #0078D4; } /* Azure Blue for contrast */
-        .dark-mode .text-primary { color: #FFFFFF; } /* White for contrast */
-        .dark-mode body { background-color: #1E1E1E; color: #FFFFFF; }
+        .dark-mode .text-primary { color: #766a6a; } /* White for contrast */
+        .dark-mode body { background-color: #1E1E1E; color: #211d1d; }
     </style>
 
     
@@ -55,9 +55,13 @@
         <nav class="sidebar bg-primary text-white min-h-screen p-4 flex flex-col items-center">
             <ul class="w-full">
                 <li class="mb-6"><a href="#about" class="flex items-center text-lg"><i class="fas fa-user"></i><span class="ml-2">About</span></a></li>
-                <li class="mb-6"><a href="#skills" class="flex items-center text-lg"><i class="fas fa-code"></i><span class="ml-2">Skills</span></a></li>
                 <li class="mb-6"><a href="#certifications" class="flex items-center text-lg"><i class="fas fa-certificate"></i><span class="ml-2">Certifications</span></a></li>
+                <li class="mb-6"><a href="#skills" class="flex items-center text-lg"><i class="fas fa-code"></i><span class="ml-2">Skills</span></a></li>
+                
                 <li class="mb-6"><a href="#experience" class="flex items-center text-lg"><i class="fas fa-briefcase"></i><span class="ml-2">Experience</span></a></li>
+                
+                <li class="mb-6"><a href="#education" class="flex items-center text-lg"><i class="fas fa-graduation-cap"></i><span class="ml-2">Education</span></a></li>
+
                 <li class="mb-6"><a href="#contact" class="flex items-center text-lg"><i class="fas fa-envelope"></i><span class="ml-2">Contact</span></a></li>
             </ul>
             <button onclick="toggleDarkMode()" class="mt-auto bg-secondary text-white py-2 px-4 rounded-lg flex items-center">
@@ -79,13 +83,13 @@
                     <span class="highlight">⚡ Automation Expert</span>
                 </h2>
             </header>
-            <main class="container mx-auto p-6 space-y-16">
+            <main class="container mx-auto p-12 space-y-16">
                 <section id="about" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
-                    <h2 class="text-3xl font-semibold mb-4">About Me</h2>
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-user"></i> About Me</h2>
                     <p class="text-lg">I am a highly skilled Cloud and DevOps Architect with over 12 years of experience in designing, deploying, and managing cloud infrastructure across Azure and AWS. My expertise lies in cloud automation, DevOps implementation, infrastructure as code (IaC), and CI/CD pipeline development to optimize application performance and scalability.<br><br>At EY Global Delivery Services, I lead cloud platform architecture for data analytics workloads, ensuring security, automation, and efficiency while managing stakeholders and mentoring teams. Previously, at Good Methods Global (CareStack) and Mindcurv, I played a key role in cloud migrations, infrastructure automation, and performance optimization. My early career at Accenture involved managing large-scale AWS environments, CMS migrations, and enterprise cloud transformations.<br><br>With a strong background in Terraform, Azure DevOps, Kubernetes, and CI/CD automation, I am passionate about driving innovation, improving cloud efficiency, and leading teams toward cutting-edge cloud solutions.</p>
                 </section>
                 <section id="certifications" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
-                    <h2 class="text-3xl font-semibold mb-4">Certifications</h2>
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-certificate"></i> Certifications</h2>
                     <ul class="list-disc pl-5 text-lg">
                         <li><a href="https://learn.microsoft.com/api/credentials/share/en-us/ajomathew/6B4464E7CAAEAC14?sharingId=24CB62630ACB0427">Azure Solutions Architect Expert</a></li>
                 
@@ -93,51 +97,52 @@
                     </ul>
                 </section>
                 <section id="skills" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
-                    <h2 class="text-3xl font-semibold mb-4">Skills</h2>
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-tools"></i> Skills</h2>
                     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Azure</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fab fa-microsoft"></i> Azure</h3>
                             <p class="text-lg">Azure Private Endpoints, Azure Databricks, Azure Synapse Analytics, Azure Data Factory, App Service, Azure Automation, Storage / ADLS, Azure VM, Azure PowerShell API, Azure Container Service, Azure Container Registry, Azure SSO</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">DevOps</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-tools"></i> DevOps</h3>
                             <p class="text-lg">Azure DevOps, GitHub, TeamCity, Octopus Deploy, Terraform, Docker / Kubernetes</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Infrastructure as Code</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-code"></i> Infrastructure as Code</h3>
                             <p class="text-lg">Azure Resource Management Template, Azure Biceps, Terraform, Ansible</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">AWS</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fab fa-aws"></i> AWS</h3>
                             <p class="text-lg">AWS EC2, S3, Route 53-DNS, CloudFront, ELB, Auto Scaling, Elastic Beanstalk</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Database</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-database"></i> Database</h3>
                             <p class="text-lg">MSSQL, MySQL, Azure SQL, Azure CosmosDB, AWS RDS</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Scripting</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-terminal"></i> Scripting</h3>
                             <p class="text-lg">PowerShell, Shell/bash, Python</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Search Engine</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-search"></i> Search Engine</h3>
                             <p class="text-lg">Azure Search, Apache Solr, Elastic Search</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Application/Web Servers</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-server"></i> Application/Web Servers</h3>
                             <p class="text-lg">Azure WebApp, IIS, Apache, Tomcat, Nginx</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Operating Systems</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-desktop"></i> Operating Systems</h3>
                             <p class="text-lg">Windows Server 2008/2008R2/2012, Linux Server- Ubuntu / Redhat(6-7)</p>
                         </div>
                         <div class="bg-white p-6 rounded-lg shadow-lg">
-                            <h3 class="text-xl font-bold mb-2">Other Tools</h3>
+                            <h3 class="text-xl font-bold mb-2"><i class="fas fa-tools"></i> Other Tools</h3>
                             <p class="text-lg">SonarQube, Jira, SpaceWalk, WhiteSource, Packer, Nagios, NewRelic, Application Insights</p>
                         </div>
                     </div>
                 </section>
                 <section id="experience" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-briefcase"></i> Experience</h2>
                     <h2 class="text-3xl font-semibold mb-4">EY Global Delivery Services</h2>
                     <p class="text-lg font-semibold">(Feb 2018 - Present)</p>
                     <div class="bg-white p-6 rounded-lg shadow-lg mb-4">
@@ -233,6 +238,10 @@
                             <li>Provided <strong>application-level support</strong> for <strong>198 websites and legacy server applications</strong>.</li>
                         </ul>
                     </div>
+                </section>
+                <section id="education" class="my-8 bg-accent p-6 rounded-lg shadow-lg">
+                    <h2 class="text-3xl font-semibold mb-4"><i class="fas fa-graduation-cap"></i> Education</h2>
+                    <p class="text-lg"><strong>B.Tech in Computer Science</strong> - St. Joseph's College of Engineering & Technology (2007 - 2011)</p>
                 </section>
                 <section id="contact" class="my-8">
                     <h2 class="text-3xl font-semibold mb-4 text-center">Contact</h2>
